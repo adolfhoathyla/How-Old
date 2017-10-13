@@ -26,7 +26,7 @@ class HowOldTests: XCTestCase {
         formatter.dateFormat = "yyyy-MM-dd"
         let date = formatter.date(from: "1993-04-26")!
         let years = Calc.calculate(birth: date)
-        XCTAssertEqual(years, 25)
+        XCTAssertEqual(years, 24)
     }
     
 }
