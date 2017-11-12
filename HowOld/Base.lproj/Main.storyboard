@@ -33,6 +33,7 @@
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huj-7c-hYd">
                                 <rect key="frame" x="16" y="99" width="343" height="67"/>
+                                <accessibility key="accessibilityConfiguration" identifier="result"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="bxK-GM-0uD"/>
                                 </constraints>

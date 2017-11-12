@@ -14,10 +14,18 @@
 		1607D1DC1F90342400A29184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1607D1DA1F90342400A29184 /* LaunchScreen.storyboard */; };
 		1607D1E71F90342400A29184 /* HowOldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1607D1E61F90342400A29184 /* HowOldTests.swift */; };
 		1607D1F21F9039C100A29184 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1607D1F11F9039C100A29184 /* Calc.swift */; };
+		16B53F941FB7954A00B82723 /* HowOldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B53F931FB7954A00B82723 /* HowOldUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1607D1E31F90342400A29184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1607D1C61F90342400A29184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1607D1CD1F90342400A29184;
+			remoteInfo = HowOld;
+		};
+		16B53F961FB7954A00B82723 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1607D1C61F90342400A29184 /* Project object */;
 			proxyType = 1;
@@ -38,6 +46,9 @@
 		1607D1E61F90342400A29184 /* HowOldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowOldTests.swift; sourceTree = "<group>"; };
 		1607D1E81F90342400A29184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1607D1F11F9039C100A29184 /* Calc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
+		16B53F911FB7954A00B82723 /* HowOldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowOldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B53F931FB7954A00B82723 /* HowOldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowOldUITests.swift; sourceTree = "<group>"; };
+		16B53F951FB7954A00B82723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16B53F8E1FB7954A00B82723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +81,7 @@
 			children = (
 				1607D1D01F90342400A29184 /* HowOld */,
 				1607D1E51F90342400A29184 /* HowOldTests */,
+				16B53F921FB7954A00B82723 /* HowOldUITests */,
 				1607D1CF1F90342400A29184 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +91,7 @@
 			children = (
 				1607D1CE1F90342400A29184 /* HowOld.app */,
 				1607D1E21F90342400A29184 /* HowOldTests.xctest */,
+				16B53F911FB7954A00B82723 /* HowOldUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +117,15 @@
 				1607D1E81F90342400A29184 /* Info.plist */,
 			);
 			path = HowOldTests;
+			sourceTree = "<group>";
+		};
+		16B53F921FB7954A00B82723 /* HowOldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16B53F931FB7954A00B82723 /* HowOldUITests.swift */,
+				16B53F951FB7954A00B82723 /* Info.plist */,
+			);
+			path = HowOldUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +166,24 @@
 			productReference = 1607D1E21F90342400A29184 /* HowOldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		16B53F901FB7954A00B82723 /* HowOldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B53F9A1FB7954A00B82723 /* Build configuration list for PBXNativeTarget "HowOldUITests" */;
+			buildPhases = (
+				16B53F8D1FB7954A00B82723 /* Sources */,
+				16B53F8E1FB7954A00B82723 /* Frameworks */,
+				16B53F8F1FB7954A00B82723 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16B53F971FB7954A00B82723 /* PBXTargetDependency */,
+			);
+			name = HowOldUITests;
+			productName = HowOldUITests;
+			productReference = 16B53F911FB7954A00B82723 /* HowOldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +200,12 @@
 						ProvisioningStyle = Automatic;
 					};
 					1607D1E11F90342400A29184 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = MZ982Z982H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1607D1CD1F90342400A29184;
+					};
+					16B53F901FB7954A00B82723 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = MZ982Z982H;
 						ProvisioningStyle = Automatic;
@@ -175,6 +228,7 @@
 			targets = (
 				1607D1CD1F90342400A29184 /* HowOld */,
 				1607D1E11F90342400A29184 /* HowOldTests */,
+				16B53F901FB7954A00B82723 /* HowOldUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +245,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1607D1E01F90342400A29184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B53F8F1FB7954A00B82723 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,6 +279,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16B53F8D1FB7954A00B82723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B53F941FB7954A00B82723 /* HowOldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -225,6 +294,11 @@
 			isa = PBXTargetDependency;
 			target = 1607D1CD1F90342400A29184 /* HowOld */;
 			targetProxy = 1607D1E31F90342400A29184 /* PBXContainerItemProxy */;
+		};
+		16B53F971FB7954A00B82723 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1607D1CD1F90342400A29184 /* HowOld */;
+			targetProxy = 16B53F961FB7954A00B82723 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,6 +473,32 @@
 			};
 			name = Release;
 		};
+		16B53F981FB7954A00B82723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = MZ982Z982H;
+				INFOPLIST_FILE = HowOldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AA.HowOldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HowOld;
+			};
+			name = Debug;
+		};
+		16B53F991FB7954A00B82723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = MZ982Z982H;
+				INFOPLIST_FILE = HowOldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AA.HowOldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HowOld;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,12 +518,22 @@
 				1607D1ED1F90342400A29184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1607D1EE1F90342400A29184 /* Build configuration list for PBXNativeTarget "HowOldTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1607D1EF1F90342400A29184 /* Debug */,
 				1607D1F01F90342400A29184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B53F9A1FB7954A00B82723 /* Build configuration list for PBXNativeTarget "HowOldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B53F981FB7954A00B82723 /* Debug */,
+				16B53F991FB7954A00B82723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
