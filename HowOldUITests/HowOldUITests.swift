@@ -32,21 +32,21 @@ class HowOldUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
+
     func testCalc() {
         
         let app = XCUIApplication()
+        
         let datePickersQuery = app.datePickers
         datePickersQuery.pickerWheels["November"].swipeDown()
-        datePickersQuery.pickerWheels["11"].swipeDown()
+        datePickersQuery.pickerWheels["13"].swipeDown()
         datePickersQuery.pickerWheels["2017"].swipeDown()
         
         let resultLabel = app.staticTexts["result"].label
         let results = resultLabel.components(separatedBy: " ")
         let result = Int(results.first!)
-        XCTAssertTrue(result! < 0)
+        XCTAssertTrue(result! > 0)
         
     }
-
     
 }
