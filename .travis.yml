@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode9.1
 os: osx
 
-xcode_project: HowOld.xcodeproj
+xcode_project: HowOld.xcworkspace
 xcode_scheme: HowOldTests
 
 script:
