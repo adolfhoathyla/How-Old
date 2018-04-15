@@ -38,9 +38,9 @@ class HowOldUITests: XCTestCase {
         let app = XCUIApplication()
         
         let datePickersQuery = app.datePickers
-        datePickersQuery.pickerWheels["November"].swipeDown()
-        datePickersQuery.pickerWheels["13"].swipeDown()
-        datePickersQuery.pickerWheels["2017"].swipeDown()
+        datePickersQuery.pickerWheels["April"].swipeDown()
+        datePickersQuery.pickerWheels["15"].swipeDown()
+        datePickersQuery.pickerWheels["2018"].swipeDown()
         
         let resultLabel = app.staticTexts["result"].label
         let results = resultLabel.components(separatedBy: " ")
