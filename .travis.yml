@@ -2,5 +2,8 @@ language: objective-c
 osx_image: xcode9.1
 os: osx
 
+xcode_project: HowOld.xcodeproj
+xcode_scheme: HowOldTests
+
 script:
   - xcodebuild -workspace HowOld.xcworkspace -scheme 'HowOld' -sdk iphonesimulator build
