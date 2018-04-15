@@ -6,4 +6,4 @@ xcode_workspace: HowOld.xcworkspace
 xcode_scheme: HowOldTests
 
 script:
-  - xcodebuild -workspace HowOld.xcworkspace -scheme 'HowOld' -sdk iphonesimulator build
+  - xcodebuild test -workspace HowOld.xcworkspace -scheme 'HowOld' -sdk iphonesimulator build
